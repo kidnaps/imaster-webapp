@@ -25,7 +25,7 @@ export default defineConfig({
           media: {
             type: 'video',
             src: import('./assets/videos/3.mp4'),
-            style: 'aspect-ratio: 780/936',
+            style: 'aspect-ratio: 390/468',
           },
           shape: 'rounded',
           pagination: 'count',
@@ -54,13 +54,17 @@ export default defineConfig({
           media: {
             type: 'video',
             src: import('./assets/videos/4.mp4'),
-            style: 'aspect-ratio: 780/936',
+            style: 'aspect-ratio: 390/468',
           },
           shape: 'rounded',
           pagination: 'count',
           title: 'Включить график',
           description: "✅ — график включен, к вам могут записываться<br>❌ — график выключен, запись к вам закрыта<br>Для смены статуса необходимо нажать на кнопку.<br><br>Например, у вас есть неопределнность в своем расписании и вы хотели бы временно отключить возможность записи для своих клиентов — выключите график.",
           button: 'Дальше',
+          nextButton: {
+            to: '/',
+            content: 'Next',
+          },
         },
       ],
     },
